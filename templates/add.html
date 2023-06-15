@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+{% block title %}Add City Entry - TST{% endblock %}
+
+{% block content %}
+<h1>Add City Entry</h1>
+{% if form_errors %}
+    <p class="error">{{ form_errors }}</p>
+{% endif %}
+<form action="/add" method="POST">
+    {{ form.csrf_token }}
+    <div class="form-group">
+        <label for="city">City:</label>
+        <input type="text" id="city" name="city" required>
+    </div>
+    <div class="form-group">
+        <label for="state">State:</label>
+        <input type="text" id="state" name="state" required>
+    </div>
+    <div class="form-group">
+        <label for="population">Population:</label>
+        <input type="number" id="population" name="population" required>
+    </div>
+    <div class="form-group">
+        <label for="latitude">Latitude:</label>
+        <input type="text" id="latitude" name="latitude" required>
+    </div>
+    <div class="form-group">
+        <label for="longitude">Longitude:</label>
+        <input type="text" id="longitude" name="longitude" required>
+    </div>
+    <button type="submit">Add Entry</button>
+</form>
+{% endblock %}

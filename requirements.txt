@@ -1,0 +1,4 @@
+pyodbc
+flask-wtf
+wtforms
+geopy

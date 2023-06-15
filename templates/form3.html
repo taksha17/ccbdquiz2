@@ -1,0 +1,50 @@
+{% extends "base.html" %}
+{% block title %}Display data lat lon bound - TST{% endblock %}
+{% block content %}
+{% if error %}
+    <p class="">{{ error }}</p>
+{% endif %}
+{% if form != Null %}
+<div class="form-group">
+        <form action="/form3" method="POST">
+            {{ form.csrf_token() }}
+            {{ form.lat1.label }} {{ form.lat1 }}<br/>
+            {{ form.lat2.label }} {{ form.lat2 }}<br/>
+            {{ form.lon1.label }} {{ form.lon1 }}<br/>
+            {{ form.lon2.label }} {{ form.lon2 }}<br/>
+            {{ form.submit }}
+        </form>
+    </div>
+{% endif %}
+{% if data == 1 %}
+<p class="">Latitude1: {{ lat1 }}</p>
+<p class="">Latitude2: {{ lat2 }}</p>
+<p class="">Longitude1: {{ lon1 }}</p>
+<p class="">Longitude2: {{ lon2 }}</p>
+<div class="container-small" style="height: 600px; overflow: scroll;">
+    <table class="table table-bordered table-hover table-fixed table-wrap">
+        <caption>City Records</caption>
+        <thead>
+            <tr>
+                <th scope="col">City</th>
+                <th scope="col">State</th>
+                <th scope="col">Population</th>
+                <th scope="col">lat</th>
+                <th scope="col">lon</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in result %}
+                <tr>
+                    <td>{{ row[0] }}</td>
+                    <td>{{ row[1] }}</td>
+                    <td>{{ row[2] }}</td>
+                    <td>{{ row[3] }}</td>
+                    <td>{{ row[4] }}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+{% endif %}
+{% endblock %}

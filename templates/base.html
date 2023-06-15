@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            margin: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        .container-small {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .jumbotron {
+            background-color: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .navbar {
+            background-color: #0c0934;
+        }
+
+        .navbar-brand {
+            color: #fff;
+        }
+
+        .navbar-brand:hover {
+            color: #fff;
+        }
+
+        .nav-link {
+            color: #fff;
+        }
+
+        .nav-link:hover {
+            color: #f8f9fa;
+        }
+
+        .content-container {
+            margin-top: 30px;
+        }
+
+        .error-message {
+            color: #dc3545;
+            margin-bottom: 10px;
+        }
+        
+        .container-large {
+            max-width: 100%;
+        }
+        
+        .nav-item {
+            padding: 0 10px;
+        }
+        
+        .nav-link {
+            font-size: 16px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-small">
+        <div class="jumbotron">
+            <h3>Data From City</h3>
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container-large">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="/">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/form1">Q.10 (a)Search by City names</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/form2">Q12.Update the population</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/form3">Q11. Search cities by bound</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/add">Add City</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/remove">Delete City</a>
+                </li>
+                <!-- <li class="nav-item">
+                    <a class="nav-link" href="/form4">Search by Clusters</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/form5">Large Magnitude (>4.0) Occurrence at Night</a>
+                </li> -->
+            </ul>
+        </div>
+    </nav>
+    
+    <div class="container-small content-container">
+        {% block content %}
+        {% endblock %}
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+

@@ -1,0 +1,81 @@
+
+Name:
+Last 4 digits ID:
+
+CSE 6332, Cloud Computing					
+
+
+Quiz Q2, Spring 2023   (c) DL, UTA, 2023
+
+
+  C&P means cut and paste only those relevant lines from your program(s) into this quiz.
+
+
+ 1.  I understand that I am on my honor during this quiz, I will not collaborate, use 
+     non-allowed sources, and I will not discuss or share this quiz with anyone for the next 
+     12 hours.
+     You MAY: use Google to search, use previous source code, 
+     YOU MAY NOT use:
+     Email, Facebook, Hangouts, IM, chats, Skype or ANY other human connection.
+
+     This is a timed test. Late tests will have points deducted for being late.
+     Very late tests will not be graded.
+
+     When you are complete, with any part, please send the link, raise your hand, so we may visually inspect that part.
+
+     The second part of the test, you should electronically submit, you will need to copy and paste 
+     only those lines of code to implement that part of the test, usually a few (two to eight) lines of code. 
+     Place it immediately after the question.
+
+     Submit this Quiz (renamed) with code cut and pasted, ONLY text. DO NOT submit zips, binaries, libraries,
+     or anything other than text.
+
+     When any parts(questions) are complete complete, submit this test, you may make multiple submissions.
+
+     If you have computer, or other, problems, please raise your hand immediately.
+
+     If you understand and agree, please initial here:
+     _________________
+
+ 2. Get files from this same folder.
+   
+ 3. Name your program/submission with your name and last digits of your ID.
+
+ 4. Using the cloud services provider, all functionality possible should be implemented on that provider.
+    (Of course, displaying web pages through a browser and the user interface is "local")
+    The cloud provider is MS Azure.
+
+ 5. Upload all data files (*jpg and *csv, not this quiz) to the cloud service.
+
+ 6. Please create a relational database (your choice which) from the .csv data on the cloud provider, you may do this manually 
+    or in code, it is your choice.
+  
+ 7. Please put your name and ID on each page you show for this quiz.
+
+Show and submit code, when each part is complete, raise your hand and then show us:
+
+For the following you may (if you wish) normalize all latitudes and longitudes to between 0 and 360 degrees, by adding 180 to all values.
+
+ 10. On a web page (interface) allow a user to enter a city name (for example Dallas) and (a) you show the city and state names, 
+     population, lat and long. (b) Find and display any additional city within 100 km of that selection, you may show ANY city,
+     if one exists.
+
+ 11. Allow a user to give a minimum latitude and longitude value set (X1,Y1) and a maximum latitude and longitude value set (X2,Y2)
+     this creates a "bounding box" between those points. (It describes an area.)
+     Then, for all of the cities within that bounding box, show the city and state names, the population and the latitude and longitude.
+
+ 12. The population of some states is growing. Allow a user to give either: (a) a bounding box (like the previous problem) -OR-
+     (b) a State name (for example "Oklahoma") and for either case: three values: Min, Max and Inc (for example 183000, 185000, 2000) 
+     and you will increment the population of each city (within that box or state name) with the population 
+     between Min and Max by adding the Inc value (2000) (In this example there are two cities, add 2000 to the population for each.)
+     Then list the cities, state, new population and lat, long for all that were modified.
+     Also list the count of the number of cities modified.
+
+ 13. Allow a user to add a new City, State, Population, and latitude and longitude or to remove a City and State entry (tuple).
+
+ 14. In class, on your computer, please show us the application running and we will try it out. Only for parts 10, 11, 12, 13. 
+
+ 15. When complete, return (send) this quiz
+     If you finish early, send this immediately, otherwise send between
+     the end of class and no more than 1 minute after that.
+
