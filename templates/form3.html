@@ -1,10 +1,10 @@
+<!-- form3.html -->
 {% extends "base.html" %}
-{% block title %}Display data lat lon bound - TST{% endblock %}
 {% block content %}
 {% if error %}
     <p class="">{{ error }}</p>
 {% endif %}
-{% if form != Null %}
+{% if form %}
 <div class="form-group">
         <form action="/form3" method="POST">
             {{ form.csrf_token() }}

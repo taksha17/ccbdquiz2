@@ -43,3 +43,12 @@
 </div>
 {% endif %}
 {% endblock %}
+
+{% if additional_cities %}
+    <h2>Additional Cities within 100 km:</h2>
+    <ul>
+        {% for c in additional_cities %}
+            <li>{{ c[0] }} - {{ c[1] }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
