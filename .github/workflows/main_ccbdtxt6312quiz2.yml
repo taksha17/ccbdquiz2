@@ -60,4 +60,4 @@ jobs:
         with:
           app-name: 'CCBDtxt6312quiz2'
           slot-name: 'Production'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_18B21EF4322B47F1B662BD96F78BB985 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_A46EBE8BA25E47288A9B2DBD2EEF6D39 }}
